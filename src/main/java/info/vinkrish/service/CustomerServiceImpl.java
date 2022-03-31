@@ -10,7 +10,6 @@ import info.vinkrish.model.Customer;
 import info.vinkrish.repository.CustomerRepository;
 
 @Service("customerService")
-//@Scope("prototype")
 @Scope("singleton")
 public class CustomerServiceImpl implements CustomerService {
 	
