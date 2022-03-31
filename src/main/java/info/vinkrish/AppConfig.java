@@ -3,8 +3,6 @@ package info.vinkrish;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import info.vinkrish.repository.CustomerRepository;
-import info.vinkrish.repository.HibernateCustomerRepositoryImpl;
 import info.vinkrish.service.CustomerService;
 import info.vinkrish.service.CustomerServiceImpl;
 
@@ -16,11 +14,6 @@ public class AppConfig {
 	public CustomerService getCustomerService() {
 		CustomerServiceImpl service =  new CustomerServiceImpl();
 		return service;
-	}
-
-	@Bean(name = "customerRepository")
-	public CustomerRepository getCustomerRepository() {
-		return new HibernateCustomerRepositoryImpl();
 	}
 
 }
