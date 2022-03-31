@@ -1,0 +1,138 @@
+## IntelliJ
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+Last login: Thu Mar 31 11:24:57 on ttys002
+~ $ mvn -v
+Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
+Maven home: /Users/vinkrish/apache-maven-3.8.5
+Java version: 17.0.2, vendor: Homebrew, runtime: /usr/local/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "mac os x", version: "12.2.1", arch: "x86_64", family: "mac"
+~ $ cd /Users/vinkrish/Workspace/java/spring_sample_java
+~/Workspace/java/spring_sample_java $ cd ..
+~/Workspace/java $ cd spring_sample
+~/Workspace/java/spring_sample $ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/vinkrish/Workspace/java/spring_sample/.git/
+~/Workspace/java/spring_sample $ ls
+pom.xml	src	target
+~/Workspace/java/spring_sample $ touch .gitignore
+~/Workspace/java/spring_sample $ ls
+pom.xml	src	target
+~/Workspace/java/spring_sample $ ls -la
+total 24
+drwxrwxrwx  10 vinkrish  staff   320 Mar 31 12:29 .
+drwxr-xr-x  10 vinkrish  staff   320 Mar 31 10:03 ..
+-rwxrwxrwx   1 vinkrish  staff  1479 Mar 31 10:08 .classpath
+drwxr-xr-x   9 vinkrish  staff   288 Mar 31 12:28 .git
+-rw-r--r--   1 vinkrish  staff     0 Mar 31 12:29 .gitignore
+-rwxrwxrwx   1 vinkrish  staff   565 Jan 30  2017 .project
+drwxrwxrwx   5 vinkrish  staff   160 Jul 19  2020 .settings
+-rwxrwxrwx   1 vinkrish  staff  1226 Mar 31 11:40 pom.xml
+drwxrwxrwx   4 vinkrish  staff   128 Jan 30  2017 src
+drwxr-xr-x   9 vinkrish  staff   288 Mar 31 11:40 target
+~/Workspace/java/spring_sample $ vi .gitignore
+~/Workspace/java/spring_sample $ vi .gitignore
+~/Workspace/java/spring_sample $ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	pom.xml
+	src/
+
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+##############################
+".gitignore" 84L, 1222B
