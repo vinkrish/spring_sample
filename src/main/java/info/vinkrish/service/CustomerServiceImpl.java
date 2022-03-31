@@ -9,11 +9,16 @@ import info.vinkrish.repository.CustomerRepository;
 
 public class CustomerServiceImpl implements CustomerService {
 	
-	@Autowired
 	private CustomerRepository customerRepository;
 	
 	public CustomerServiceImpl() {
 		super();
+	}
+
+	@Autowired
+	public void setCustomerRepository(CustomerRepository customerRepository) {
+		System.out.println("We are using setter injection!");
+		this.customerRepository = customerRepository;
 	}
 
 	@Override
