@@ -3,10 +3,12 @@ package info.vinkrish.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import info.vinkrish.model.Customer;
 import info.vinkrish.repository.CustomerRepository;
 
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 	
 	private CustomerRepository customerRepository;
