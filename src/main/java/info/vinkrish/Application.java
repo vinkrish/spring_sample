@@ -1,17 +1,13 @@
 package info.vinkrish;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import info.vinkrish.service.CustomerService;
+import info.vinkrish.service.CustomerServiceImpl;
 
 public class Application {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
-		
-		CustomerService service = appContext.getBean("customerService", CustomerService.class);
+		CustomerService service = new CustomerServiceImpl();
 		
 		System.out.println(service.findAll().get(0).getFirstName());
 
